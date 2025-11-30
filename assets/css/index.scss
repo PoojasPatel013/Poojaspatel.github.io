@@ -1,7 +1,57 @@
---- ---
-/* =========================================
-   1. GLOBAL VARIABLES & UTILS
-   ========================================= */
+/* --- TERMINAL MOTTO STYLE --- */
+.motto-console {
+    /* Box Styling */
+    background: #f8f9fa;
+    /* Very light gray */
+    border-left: 5px solid $red;
+    /* Matches your 3D button */
+    border-radius: 0 8px 8px 0;
+    /* Rounded corners on right */
+    padding: 20px 25px;
+    margin: 30px 0;
+
+    /* Text Styling */
+    font-family: "Courier New", Courier, monospace;
+    /* Tech vibe */
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #444;
+    text-transform: uppercase;
+    /* Keeps the energy of your text */
+    letter-spacing: 0.5px;
+
+    /* "Typing" Prompt Decoration */
+    .prompt {
+        color: $red;
+        font-weight: bold;
+        margin-right: 10px;
+        animation: blink 1s step-end infinite;
+    }
+
+    /* Highlight the Ruby on Rails part */
+    .highlight {
+        color: $red;
+        /* Or use black for contrast */
+        font-weight: bold;
+        background: rgba($red, 0.1);
+        padding: 2px 5px;
+        border-radius: 4px;
+    }
+}
+
+/* Optional: Blinking Cursor Animation */
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
 $red: #f33;
 $red2: desaturate(darken($red, 15%), 18%);
 $buttonHeight: 54;

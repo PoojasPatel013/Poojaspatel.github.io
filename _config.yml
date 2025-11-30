@@ -4,3 +4,4 @@ theme: jekyll-theme-primer
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-sass-converter
